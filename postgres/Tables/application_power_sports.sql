@@ -1,0 +1,40 @@
+CREATE TABLE [postgres].[application_power_sports] (
+    [id]                 INT             NOT NULL,
+    [application_id]     BIGINT          NOT NULL,
+    [power_sport_id]     BIGINT          NULL,
+    [term_id]            BIGINT          NULL,
+    [name]               TEXT            NOT NULL,
+    [term_period]        BIGINT          NULL,
+    [term_price]         NUMERIC (13, 2) NULL,
+    [claim_amount]       NUMERIC (13, 2) NULL,
+    [claim_increase_sum] NUMERIC (13, 2) NULL,
+    [claim_add_price]    NUMERIC (13, 2) NULL,
+    [total_price]        NUMERIC (13, 2) NULL,
+    [tax_price]          NUMERIC (13, 2) NULL,
+    [subtotal_price]     NUMERIC (13, 2) NULL,
+    [discount_price]     NUMERIC (13, 2) NULL,
+    [plan_price]         NUMERIC (13, 2) NULL,
+    [deductible_amount]  NUMERIC (13, 2) NULL,
+    [markup]             NUMERIC (13, 2) NULL,
+    [markup_unit]        VARCHAR (255)   NULL,
+    [created_at]         DATETIME        NULL,
+    [updated_at]         DATETIME        NULL,
+    [surcharges]         NVARCHAR (255)  NULL,
+    [base_price]         NUMERIC (13, 2) NULL,
+    [lender_id]          BIGINT          NULL,
+    [lender_name]        VARCHAR (255)   NULL,
+    [lender_location]    NVARCHAR (255)  NULL,
+    [lender_phone]       VARCHAR (255)   NULL,
+    [pst_tax_price]      NUMERIC (13, 2) NULL,
+    [gst_tax_price]      NUMERIC (13, 2) NULL,
+    [hst_tax_price]      NUMERIC (13, 2) NULL,
+    [base_pst_tax_price] NUMERIC (13, 2) NULL,
+    [base_gst_tax_price] NUMERIC (13, 2) NULL,
+    [base_hst_tax_price] NUMERIC (13, 2) NULL,
+    [base_tax_price]     NUMERIC (13, 2) NULL,
+    [base_total_price]   NUMERIC (13, 2) NULL
+);
+
+
+GO
+
